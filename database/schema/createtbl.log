@@ -1,0 +1,63 @@
+(c) Copyright IBM Corporation 1993,2007
+Command Line Processor for DB2 Client 11.5.9.0
+
+You can issue database manager commands and SQL statements from the command 
+prompt. For example:
+    db2 => connect to sample
+    db2 => bind sample.bnd
+
+For general help, type: ?.
+For command help, type: ? command, where command can be
+the first few keywords of a database manager command. For example:
+ ? CATALOG DATABASE for help on the CATALOG DATABASE command
+ ? CATALOG          for help on all of the CATALOG commands.
+
+To exit db2 interactive mode, type QUIT at the command prompt. Outside 
+interactive mode, all commands must be prefixed with 'db2'.
+To list the current command option settings, type LIST COMMAND OPTIONS.
+
+For more detailed help, refer to the Online Reference Manual.
+
+db2 => db2 => CONNECT TO COMP421
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 11.5.9.0
+ SQL authorization ID   = CS421G01
+ Local database alias   = COMP421
+
+
+db2 => db2 => db2 => db2 => db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Company_Branch ( branch_id       INT             NOT NULL, branch_name     VARCHAR(50)    NOT NULL, location        VARCHAR(50)    NOT NULL, PRIMARY KEY (branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Car_Model ( model_name      VARCHAR(50)    NOT NULL, manufacturer    VARCHAR(50)    NOT NULL, base_cost       DECIMAL(10,2)   CHECK (base_cost > 0), PRIMARY KEY (model_name) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Car ( license_plate_no    VARCHAR(50)     NOT NULL, mileage             DECIMAL(10,2)   CHECK (mileage >= 0), branch_id           INT             NOT NULL, model_name          VARCHAR(50)    NOT NULL, PRIMARY KEY (license_plate_no), CONSTRAINT fk_car_branch FOREIGN KEY (branch_id) REFERENCES Company_Branch(branch_id), CONSTRAINT fk_car_model FOREIGN KEY (model_name) REFERENCES Car_Model(model_name) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Employee ( employee_id     INT             NOT NULL, branch_id       INT             NOT NULL, e_name          VARCHAR(50)    NOT NULL, salary          DECIMAL(10,2)   CHECK (salary > 0), PRIMARY KEY (employee_id, branch_id), CONSTRAINT fk_employee_branch FOREIGN KEY (branch_id) REFERENCES Company_Branch(branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Mechanic ( employee_id     INT     NOT NULL, branch_id       INT     NOT NULL, PRIMARY KEY (employee_id, branch_id), CONSTRAINT fk_mechanic_employee FOREIGN KEY (employee_id, branch_id) REFERENCES Employee(employee_id, branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Manager ( employee_id     INT     NOT NULL, branch_id       INT     NOT NULL, PRIMARY KEY (employee_id, branch_id), CONSTRAINT fk_manager_employee FOREIGN KEY (employee_id, branch_id) REFERENCES Employee(employee_id, branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Insurance ( insurance_id    INT             NOT NULL, cost_per_day    DECIMAL(10,2)   NOT NULL CHECK (cost_per_day > 0), i_description   VARCHAR(255), PRIMARY KEY (insurance_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Renter ( renter_id       INT             NOT NULL, r_name          VARCHAR(100)    NOT NULL, address         VARCHAR(200)    NOT NULL, license_no      VARCHAR(50)     NOT NULL, PRIMARY KEY (renter_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Rental ( rental_id           INT             NOT NULL, start_date          DATE            NOT NULL, end_date            DATE            NOT NULL, total_cost          DECIMAL(10,2)   CHECK (total_cost >= 0), license_plate_no    VARCHAR(20)     NOT NULL, renter_id           INT             NOT NULL, insurance_id        INT, employee_id         INT             NOT NULL, branch_id           INT             NOT NULL, PRIMARY KEY (rental_id), CONSTRAINT fk_rental_car FOREIGN KEY (license_plate_no) REFERENCES Car(license_plate_no), CONSTRAINT fk_rental_renter FOREIGN KEY (renter_id) REFERENCES Renter(renter_id), CONSTRAINT fk_rental_insurance FOREIGN KEY (insurance_id) REFERENCES Insurance(insurance_id), CONSTRAINT fk_rental_manager FOREIGN KEY (employee_id, branch_id) REFERENCES Manager(employee_id, branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Repair ( repair_id           INT             NOT NULL, date                DATE            NOT NULL, r_description       VARCHAR(255), license_plate_no    VARCHAR(20)     NOT NULL, employee_id         INT             NOT NULL, branch_id  INT             NOT NULL, PRIMARY KEY (repair_id), CONSTRAINT fk_repair_car FOREIGN KEY (license_plate_no) REFERENCES Car(license_plate_no), CONSTRAINT fk_repair_mechanic FOREIGN KEY (employee_id, branch_id) REFERENCES Mechanic(employee_id, branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => CREATE TABLE Fines ( rental_id       INT             NOT NULL, employee_id     INT             NOT NULL, branch_id       INT             NOT NULL, amount          DECIMAL(10,2)   NOT NULL CHECK (amount > 0), f_description   VARCHAR(255), PRIMARY KEY (rental_id, employee_id, branch_id), CONSTRAINT fk_fines_rental FOREIGN KEY (rental_id) REFERENCES Rental(rental_id), CONSTRAINT fk_fines_manager FOREIGN KEY (employee_id, branch_id) REFERENCES Manager(employee_id, branch_id), CONSTRAINT fk_fines_branch FOREIGN KEY (branch_id) REFERENCES Company_Branch(branch_id) )
+DB20000I  The SQL command completed successfully.
+
+db2 => 

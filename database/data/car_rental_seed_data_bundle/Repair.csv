@@ -1,0 +1,25 @@
+repair_id,date,r_description,license_plate_no,employee_id,branch_id
+1,2025-06-07,Battery replacement,CDS-528,3,3
+2,2025-07-19,Windshield chip repair,SRL-846,2,1
+3,2025-07-10,Suspension alignment,SRL-846,3,1
+4,2026-02-26,Suspension alignment,ARU-286,2,3
+5,2026-02-22,Air filter replacement,CDS-528,2,3
+6,2026-03-03,Air filter replacement,BZY-417,3,2
+7,2025-10-11,Brake pad replacement,HFY-898,3,1
+8,2025-10-21,Suspension alignment,VWX-857,2,2
+9,2026-02-15,Brake pad replacement,CDS-528,2,3
+10,2026-03-15,Air filter replacement,SRL-846,3,1
+11,2025-06-10,Suspension alignment,SRL-846,1,1
+12,2026-03-01,Windshield chip repair,SRL-846,1,1
+13,2026-03-03,Windshild chip repair,SRL-846,1,1
+14,2025-05-12,Air filter replacement,SRL-846,2,1
+15,2026-01-12,Brake pad replacement,CDS-528,3,3
+16,2025-01-04,Suspension alignment,CDS-528,2,3
+17,2025-02-14,Oil change,VWX-857,2,2
+18,2025-04-12,Brake inspection,VWX-857,3,2
+19,2025-05-30,Tire rotation,VWX-857,2,2
+20,2025-07-19,Battery replacement,VWX-857,3,2
+21,2025-09-10,Engine diagnostics,VWX-857,2,2
+22,2025-11-22,Transmission check,VWX-857,3,2
+23,2025-12-15,Wheel alignment,VWX-857,2,2
+24,2026-02-10,Coolant flush,VWX-857,3,2

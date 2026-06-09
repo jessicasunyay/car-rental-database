@@ -1,0 +1,13 @@
+CONNECT TO COMP421;
+
+DROP TABLE Fines;
+DROP TABLE Repair;
+DROP TABLE Rental;
+DROP TABLE Renter;
+DROP TABLE Insurance;
+DROP TABLE Manager;
+DROP TABLE Mechanic;
+DROP TABLE Employee;
+DROP TABLE Car;
+DROP TABLE Car_Model;
+DROP TABLE Company_Branch;

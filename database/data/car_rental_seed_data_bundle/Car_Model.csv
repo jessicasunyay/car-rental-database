@@ -1,0 +1,110 @@
+model_name,manufacturer,base_cost
+Kona,Hyundai,70.09
+Murano,Nissan,59.44
+Q3,Audi,170.62
+Golf,Volkswagen,48.55
+Jimny,Suzuki,78.93
+California T,Ferrari,534.23
+B4,Alpina,82.84
+Grandland,Opel/Vauxhall,79.98
+4Runner,Toyota,48.71
+Artura,McLaren,425.66
+Outlander Sport,Mitsubishi,47.98
+Cooper,Mini,58.26
+S-Class,Mercedes-Benz,171.23
+Silverado 1500,Chevrolet,52.99
+S60,Volvo,156.11
+Ferrari,812 Superfast,850.0
+Mahindra,XUV300,55.0
+Toyota,Camry,70.0
+Ford,Mustang,120.0
+Chevrolet,Camaro,130.0
+Nissan,Altima,60.0
+BMW,X1 sDrive28i,95.0
+Mercedes-Benz,C-Class,120.0
+Audi,A3,100.0
+Volkswagen,Golf,55.00
+Porsche,718 Boxster,220.00
+Rolls-Royce,Ghost,850.00
+McLaren,540C,650.00
+Lexus,ES,95.00
+Hyundai,Elantra,50.00
+Kia,Forte,48.00
+Mazda,MX-5,85.00
+Subaru,Ascent,95.00
+Mitsubishi,Outlander,80.00
+Tesla,Model S,160.00
+Dodge,Challenger,120.00
+Ram,1500,105.00
+Volvo,XC40,90.00
+Civic,Honda,51.0
+Accord,Ford,52.0
+CR-V,Chevrolet,53.0
+Pilot,Nissan,54.0
+Odyssey,Hyundai,55.0
+Fit,Kia,56.0
+HR-V,BMW,57.0
+Ridgeline,Mercedes,58.0
+Prius,Audi,59.0
+Yaris,Volkswagen,60.0
+Avalon,Subaru,61.0
+Venza,Mazda,62.0
+Sequoia,Tesla,63.0
+Land Cruiser,Volvo,64.0
+Focus,Lexus,65.0
+Fusion,Porsche,66.0
+Fiesta,Toyota,67.0
+Expedition,Honda,68.0
+Maverick,Ford,69.0
+EcoSport,Chevrolet,70.0
+Malibu,Nissan,71.0
+Impala,Hyundai,72.0
+Trailblazer,Kia,73.0
+Blazer,BMW,74.0
+Traverse,Mercedes,75.0
+Trax,Audi,76.0
+Leaf,Volkswagen,77.0
+Kicks,Subaru,78.0
+Juke,Mazda,79.0
+370Z,Tesla,80.0
+Frontier,Volvo,81.0
+Titan,Lexus,82.0
+A-Class,Porsche,83.0
+CLA,Toyota,84.0
+GLA,Honda,85.0
+GLE,Ford,86.0
+GLS,Chevrolet,87.0
+X2,Nissan,88.0
+X4,Hyundai,89.0
+X6,Kia,90.0
+Z4,BMW,91.0
+i4,Mercedes,92.0
+i7,Audi,93.0
+A6,Volkswagen,94.0
+A7,Subaru,95.0
+A8,Mazda,96.0
+Q8,Tesla,97.0
+TT,Volvo,98.0
+Arteon,Lexus,99.0
+Beetle,Porsche,100.0
+Touareg,Toyota,101.0
+Cayman GT4,Honda,102.0
+911 Turbo,Ford,103.0
+911 Carrera,Chevrolet,104.0
+LC,Nissan,105.0
+RC,Hyundai,106.0
+RC F,Kia,107.0
+Genesis G70,BMW,108.0
+Genesis G80,Mercedes,109.0
+Genesis GV70,Audi,110.0
+K5,Volkswagen,111.0
+Carnival,Subaru,112.0
+CX-30,Mazda,113.0
+CX-50,Tesla,114.0
+Solterra,Volvo,115.0
+Baja,Lexus,116.0
+ID.4,Porsche,117.0
+ID. Buzz,Toyota,118.0
+Model Roadster,Honda,119.0
+V90,Ford,50.0
+S90,Chevrolet,51.0

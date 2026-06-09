@@ -1,0 +1,285 @@
+(c) Copyright IBM Corporation 1993,2007
+Command Line Processor for DB2 Client 11.5.9.0
+
+You can issue database manager commands and SQL statements from the command 
+prompt. For example:
+    db2 => connect to sample
+    db2 => bind sample.bnd
+
+For general help, type: ?.
+For command help, type: ? command, where command can be
+the first few keywords of a database manager command. For example:
+ ? CATALOG DATABASE for help on the CATALOG DATABASE command
+ ? CATALOG          for help on all of the CATALOG commands.
+
+To exit db2 interactive mode, type QUIT at the command prompt. Outside 
+interactive mode, all commands must be prefixed with 'db2'.
+To list the current command option settings, type LIST COMMAND OPTIONS.
+
+For more detailed help, refer to the Online Reference Manual.
+
+db2 => db2 => db2 => CONNECT TO COMP421
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 11.5.9.0
+ SQL authorization ID   = CS421G01
+ Local database alias   = COMP421
+
+
+db2 => db2 => IMPORT FROM "car_rental_seed_data_bundle/Company_Branch.csv" OF DEL SKIPCOUNT 1 INSERT INTO Company_Branch
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Company_Branch.csv".
+
+SQL3110N  The utility has completed processing.  "7" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "7".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "7" rows were processed from the input file.  "6" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 7
+Number of rows skipped      = 1
+Number of rows inserted     = 6
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 7
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Car_Model.csv" OF DEL SKIPCOUNT 1 INSERT INTO Car_Model
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Car_Model.csv".
+
+SQL3110N  The utility has completed processing.  "110" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "110".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "110" rows were processed from the input file.  "109" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 110
+Number of rows skipped      = 1
+Number of rows inserted     = 109
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 110
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Car.csv" OF DEL SKIPCOUNT 1 INSERT INTO Car
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Car.csv".
+
+SQL3110N  The utility has completed processing.  "23" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "23".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "23" rows were processed from the input file.  "22" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 23
+Number of rows skipped      = 1
+Number of rows inserted     = 22
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 23
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Employee.csv" OF DEL SKIPCOUNT 1 INSERT INTO Employee
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Employee.csv".
+
+SQL3110N  The utility has completed processing.  "17" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "17".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "17" rows were processed from the input file.  "16" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 17
+Number of rows skipped      = 1
+Number of rows inserted     = 16
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 17
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Mechanic.csv" OF DEL SKIPCOUNT 1 INSERT INTO Mechanic
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Mechanic.csv".
+
+SQL3110N  The utility has completed processing.  "10" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "10".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "10" rows were processed from the input file.  "9" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 10
+Number of rows skipped      = 1
+Number of rows inserted     = 9
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 10
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Manager.csv" OF DEL SKIPCOUNT 1 INSERT INTO Manager
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Manager.csv".
+
+SQL3110N  The utility has completed processing.  "7" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "7".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "7" rows were processed from the input file.  "6" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 7
+Number of rows skipped      = 1
+Number of rows inserted     = 6
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 7
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Insurance.csv" OF DEL SKIPCOUNT 1 INSERT INTO Insurance
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Insurance.csv".
+
+SQL3110N  The utility has completed processing.  "6" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "6".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "6" rows were processed from the input file.  "5" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 6
+Number of rows skipped      = 1
+Number of rows inserted     = 5
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 6
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Renter.csv" OF DEL SKIPCOUNT 1 INSERT INTO Renter
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Renter.csv".
+
+SQL3110N  The utility has completed processing.  "11" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "11".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "11" rows were processed from the input file.  "10" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 11
+Number of rows skipped      = 1
+Number of rows inserted     = 10
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 11
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Rental.csv" OF DEL SKIPCOUNT 1 INSERT INTO Rental
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Rental.csv".
+
+SQL3110N  The utility has completed processing.  "27" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "27".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "27" rows were processed from the input file.  "26" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 27
+Number of rows skipped      = 1
+Number of rows inserted     = 26
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 27
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Repair.csv" OF DEL SKIPCOUNT 1 INSERT INTO Repair
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Repair.csv".
+
+SQL3110N  The utility has completed processing.  "25" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "25".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "25" rows were processed from the input file.  "24" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 25
+Number of rows skipped      = 1
+Number of rows inserted     = 24
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 25
+
+
+db2 => IMPORT FROM "car_rental_seed_data_bundle/Fines.csv" OF DEL SKIPCOUNT 1 INSERT INTO Fines
+SQL3109N  The utility is beginning to load data from file 
+"car_rental_seed_data_bundle/Fines.csv".
+
+SQL3110N  The utility has completed processing.  "7" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "7".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "7" rows were processed from the input file.  "6" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 7
+Number of rows skipped      = 1
+Number of rows inserted     = 6
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 7
+
+
+db2 => TERMINATE
+DB20000I  The TERMINATE command completed successfully.
+

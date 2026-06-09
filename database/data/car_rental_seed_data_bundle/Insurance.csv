@@ -1,0 +1,6 @@
+insurance_id,cost_per_day,i_description
+1,12.0,Basic liability coverage
+2,22.0,Standard coverage + collision deductible
+3,35.0,Premium coverage + roadside assistance
+4,19.99,Extended Coverage
+5,29.99,Premium Protection

@@ -1,0 +1,17 @@
+employee_id,branch_id,e_name,salary
+1,1,Noah Singh,80021.0
+2,1,Priya Brown,61602.0
+3,1,Zoe Wilson,70774.0
+1,2,Noah Chen,80422.0
+2,2,Alex Park,70931.0
+3,2,Hassan Taylor,59379.0
+4,2,Jules Singh,48647.0
+1,3,Sofia Nguyen,66323.0
+2,3,Ben Park,59486.0
+3,3,Alex Kim,48554.0
+1,4,Amir Singh,66398.0
+2,4,Zoe Brown,66195.0
+3,4,Fatima Wilson,64708.0
+4,4,Taylor White,46402.0
+5,5,Jordan Lee,65000.0
+6,6,Priya Shah,68000.0
